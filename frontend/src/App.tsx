@@ -146,7 +146,7 @@ function App() {
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
         <h1 style={{ margin: 0, fontSize: '28px' }}>Lung Cancer Risk Predictor</h1>
         <a 
-          href="https://github.com/migue-rc/biostatistics" 
+          href="https://github.com/migue-rc/lung-cancer-risk" 
           target="_blank" 
           rel="noopener noreferrer"
           style={{
