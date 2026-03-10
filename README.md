@@ -10,7 +10,10 @@
 
 An interactive, end-to-end data science project demonstrating the lifecycle of a machine learning model from exploratory data analysis (EDA) to a fully deployed frontend application.
 
-<video src="https://github.com/migue-rc/lung-cancer-risk/raw/refs/heads/main/frontend/public/lung-cancer-risk-demo.mp4" controls="controls" style="max-width: 100%;"></video>
+
+
+https://github.com/user-attachments/assets/6a7757b7-0b99-4b7f-b330-970aa7058164
+
 
 🔗 **[Live Demo: Lung Cancer Risk Predictor](https://migue-rc.github.io/lung-cancer-risk/)**
 
