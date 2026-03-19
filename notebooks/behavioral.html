@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Miguel R.">
-<meta name="dcterms.date" content="2026-03-19">
-<meta name="description" content="This is a documentation.">
 
-<title>Welcome to the Documentation</title>
+<title>behavioral</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,31 +23,66 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./https://migue-rc.github.io/favicon.ico" rel="icon">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-22b4aaf4c2978829df3684e8f2c068db.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-772810f15eb53b72254f92eda6acfa5c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-2fe09b940f4ce31a0360a52db45da8f3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-772810f15eb53b72254f92eda6acfa5c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../https://migue-rc.github.io/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-22b4aaf4c2978829df3684e8f2c068db.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-772810f15eb53b72254f92eda6acfa5c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-2fe09b940f4ce31a0360a52db45da8f3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-772810f15eb53b72254f92eda6acfa5c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://migue-rc.github.io/brand-theme.css">
 
 
-<link rel="stylesheet" href="local-style.css">
+<link rel="stylesheet" href="../local-style.css">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -274,157 +306,223 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#lung-cancer-risk-predictor" id="toc-lung-cancer-risk-predictor" class="nav-link active" data-scroll-target="#lung-cancer-risk-predictor">Lung Cancer Risk Predictor 🫁📊</a>
-  <ul class="collapse">
-  <li><a href="#project-goals" id="toc-project-goals" class="nav-link" data-scroll-target="#project-goals">🎯 Project Goals</a></li>
-  <li><a href="#the-data-science-process" id="toc-the-data-science-process" class="nav-link" data-scroll-target="#the-data-science-process">🔬 The Data Science Process</a>
-  <ul class="collapse">
-  <li><a href="#exploratory-data-analysis-feature-selection" id="toc-exploratory-data-analysis-feature-selection" class="nav-link" data-scroll-target="#exploratory-data-analysis-feature-selection">1. Exploratory Data Analysis &amp; Feature Selection</a></li>
-  <li><a href="#model-training-logistic-regression-vs-lasso" id="toc-model-training-logistic-regression-vs-lasso" class="nav-link" data-scroll-target="#model-training-logistic-regression-vs-lasso">2. Model Training (Logistic Regression vs Lasso)</a></li>
-  <li><a href="#model-interpretability-shap-values" id="toc-model-interpretability-shap-values" class="nav-link" data-scroll-target="#model-interpretability-shap-values">3. Model Interpretability (SHAP Values)</a></li>
-  </ul></li>
-  <li><a href="#the-frontend-application" id="toc-the-frontend-application" class="nav-link" data-scroll-target="#the-frontend-application">💻 The Frontend Application</a>
-  <ul class="collapse">
-  <li><a href="#key-features" id="toc-key-features" class="nav-link" data-scroll-target="#key-features">Key Features</a></li>
-  </ul></li>
-  <li><a href="#repository-structure" id="toc-repository-structure" class="nav-link" data-scroll-target="#repository-structure">📁 Repository Structure</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Welcome to the Documentation</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">documentation</div>
-  </div>
-  </div>
 
+
+
+<p>The idea of this notebook is explore the realtionship of the behavioral features v/s risk of lung cancer</p>
+<div id="87dea54d8da88c64" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-06T13:02:17.002249669Z&quot;,&quot;start_time&quot;:&quot;2026-03-06T13:02:16.985912275Z&quot;}}" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>df_lung <span class="op">=</span> pd.read_csv(<span class="st">'data/lung_cancer.csv'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<div id="3f926a5890a0a692" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-06T13:02:21.472170225Z&quot;,&quot;start_time&quot;:&quot;2026-03-06T13:02:21.417909876Z&quot;}}" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df_variables_desc <span class="op">=</span> pd.read_json(<span class="st">'data/variables_descriptions.json'</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_variables_desc)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>behavior_features <span class="op">=</span> [</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'age'</span>, <span class="co"># Age of the individual in years</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'gender'</span>, <span class="co"># Biological sex (0 = Female, 1 = Male)</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'education_years'</span>, <span class="co"># Total years of formal education completed</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">'income_level'</span>, <span class="co"># Socioeconomic status on an ordinal scale (1 = lowest, 5 = highest)</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">'smoker'</span>, <span class="co"># Indicates whether the individual has a history of smoking (0 = No, 1 = Yes)</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">'smoking_years'</span>, <span class="co"># Total number of years the individual has smoked</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">'cigarettes_per_day'</span>, <span class="co"># Average number of cigarettes smoked per day</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">'pack_years'</span>, <span class="co"># Cumulative smoking exposure combining duration and intensity</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">'passive_smoking'</span>, <span class="co"># Exposure to secondhand smoke (0 = No, 1 = Yes)</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'air_pollution_index'</span>, <span class="co"># Air quality index representing long-term pollution exposure</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'occupational_exposure'</span>, <span class="co"># Exposure to hazardous substances at work (0 = No, 1 = Yes)</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">'radon_exposure'</span>, <span class="co"># History of radon exposure (0 = No, 1 = Yes)</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">'family_history_cancer'</span>, <span class="co"># Family history of cancer (0 = No, 1 = Yes)</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">'asthma'</span>, <span class="co"># History of asthma (0 = No, 1 = Yes)</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">'previous_tb'</span>, <span class="co"># History of tuberculosis infection (0 = No, 1 = Yes)</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">'chronic_cough'</span>, <span class="co"># Presence of long-term cough symptoms (0 = No, 1 = Yes)</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">'chest_pain'</span>, <span class="co"># Reports of chest pain (0 = No, 1 = Yes)</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">'shortness_of_breath'</span>, <span class="co"># Presence of breathing difficulty (0 = No, 1 = Yes)</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">'fatigue'</span>, <span class="co"># Persistent fatigue symptoms (0 = No, 1 = Yes)</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">'bmi'</span>, <span class="co"># Body mass index category value</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">'exercise_hours_per_week'</span>, <span class="co"># Average weekly physical activity duration</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    <span class="st">'diet_quality'</span>, <span class="co"># Overall dietary quality score (1 = poor, 5 = excellent)</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    <span class="st">'alcohol_units_per_week'</span>, <span class="co"># Average alcohol consumption per week</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    <span class="st">'healthcare_access'</span> <span class="co"># Access to healthcare services (1 = poor, 5 = excellent)</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>                       name                                        description
+0                       age                     Age of the individual in years
+1                    gender              Biological sex (0 = Female, 1 = Male)
+2           education_years          Total years of formal education completed
+3              income_level  Socioeconomic status on an ordinal scale (1 = ...
+4                    smoker  Indicates whether the individual has a history...
+5             smoking_years    Total number of years the individual has smoked
+6        cigarettes_per_day        Average number of cigarettes smoked per day
+7                pack_years  Cumulative smoking exposure combining duration...
+8           passive_smoking     Exposure to secondhand smoke (0 = No, 1 = Yes)
+9       air_pollution_index  Air quality index representing long-term pollu...
+10    occupational_exposure  Exposure to hazardous substances at work (0 = ...
+11           radon_exposure        History of radon exposure (0 = No, 1 = Yes)
+12    family_history_cancer         Family history of cancer (0 = No, 1 = Yes)
+13                     copd  Diagnosis of chronic obstructive pulmonary dis...
+14                   asthma                History of asthma (0 = No, 1 = Yes)
+15              previous_tb  History of tuberculosis infection (0 = No, 1 =...
+16            chronic_cough  Presence of long-term cough symptoms (0 = No, ...
+17               chest_pain            Reports of chest pain (0 = No, 1 = Yes)
+18      shortness_of_breath  Presence of breathing difficulty (0 = No, 1 = ...
+19                  fatigue      Persistent fatigue symptoms (0 = No, 1 = Yes)
+20                      bmi                     Body mass index category value
+21        oxygen_saturation                  Blood oxygen saturation level (%)
+22                 fev1_x10  Lung function measure derived from forced expi...
+23                crp_level   C-reactive protein level indicating inflammation
+24            xray_abnormal  Abnormal findings in chest imaging (0 = No, 1 ...
+25  exercise_hours_per_week          Average weekly physical activity duration
+26             diet_quality  Overall dietary quality score (1 = poor, 5 = e...
+27   alcohol_units_per_week               Average alcohol consumption per week
+28        healthcare_access  Access to healthcare services (1 = poor, 5 = e...
+29         lung_cancer_risk  Target variable indicating elevated lung cance...</code></pre>
+</div>
+</div>
+<p>Multicollinearity There are some redundant variables, per example</p>
+<div id="b9cfdeee9d2274ee" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-06T13:02:28.750788998Z&quot;,&quot;start_time&quot;:&quot;2026-03-06T13:02:27.756907736Z&quot;}}" data-execution_count="4">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> statsmodels_utils <span class="im">import</span> plot_correlation_heatmap</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>plot_correlation_heatmap(df_lung[behavior_features], title<span class="op">=</span><span class="st">'Correlation Heatmap'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
 <div>
-  <div class="description">
-    This is a documentation.
-  </div>
-</div>
-
-
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Miguel R. </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">March 19, 2026</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="lung-cancer-risk-predictor" class="level1">
-<h1>Lung Cancer Risk Predictor 🫁📊</h1>
-<p><img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB" class="img-fluid" alt="React"> <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&amp;logo=vite&amp;logoColor=white" class="img-fluid" alt="Vite"> <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&amp;logo=typescript&amp;logoColor=white" class="img-fluid" alt="TypeScript"> <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&amp;logo=python&amp;logoColor=ffdd54.png" class="img-fluid" alt="Python"> <img src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&amp;logo=scikit-learn&amp;logoColor=white" class="img-fluid" alt="scikit-learn"> <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&amp;logo=pandas&amp;logoColor=white" class="img-fluid" alt="Pandas"> <img src="https://img.shields.io/badge/statsmodels-%23000000.svg?style=for-the-badge" class="img-fluid" alt="Statsmodels"></p>
-<p>An interactive, end-to-end data science project demonstrating the lifecycle of a machine learning model from exploratory data analysis (EDA) to a fully deployed frontend application.</p>
-<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://github.com/migue-rc/lung-cancer-risk/raw/refs/heads/main/frontend/public/lung-cancer-risk-demo.gif" class="img-fluid figure-img"></p>
-<figcaption>Live Demo Preview</figcaption>
+<p><img src="behavioral_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
-<p>🔗 <strong><a href="https://migue-rc.github.io/lung-cancer-risk/">Live Demo: Lung Cancer Risk Predictor</a></strong></p>
-<p>This project predicts the estimated probability of lung cancer based on various health, behavioral, and environmental features using a Logistic Regression model.</p>
-<blockquote class="blockquote">
-<p><strong>⚠️ Medical Disclaimer:</strong> This application and its underlying model are for educational and demonstrative purposes only. It is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.</p>
-</blockquote>
-<hr>
-<section id="project-goals" class="level2">
-<h2 class="anchored" data-anchor-id="project-goals">🎯 Project Goals</h2>
-<p>The objective of this repository is to serve as a comprehensive portfolio piece bridging the gap between Data Science and Web Development. It demonstrates: 1. <strong>Data Science &amp; Machine Learning:</strong> Rigorous feature selection, model training, and interpretability using Python (Pandas, Scikit-Learn, SHAP). 2. <strong>Frontend Engineering:</strong> Translating static model weights into a live, interactive React application using TypeScript and Vite.</p>
-<hr>
-</section>
-<section id="the-data-science-process" class="level2">
-<h2 class="anchored" data-anchor-id="the-data-science-process">🔬 The Data Science Process</h2>
-<p>All research, data preprocessing, and modeling were conducted in Jupyter Notebooks (<code>/notebooks</code>).</p>
-<section id="exploratory-data-analysis-feature-selection" class="level3">
-<h3 class="anchored" data-anchor-id="exploratory-data-analysis-feature-selection">1. Exploratory Data Analysis &amp; Feature Selection</h3>
-<p>We began by analyzing the <a href="https://www.kaggle.com/datasets/dhrubangtalukdar/lung-cancer-prediction-dataset">dataset</a> to understand the relationships between different variables and the target (<code>lung_cancer_risk</code>).</p>
-<p>👉 <strong><a href="./notebooks/behavioral.html">View the EDA Notebook</a></strong> 👉 <strong><a href="./notebooks/features_selection.html">View the Feature Selection Notebook</a></strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="frontend/public/plots/features_impact.jpg" class="img-fluid figure-img"></p>
-<figcaption>Feature Impact</figcaption>
-</figure>
 </div>
-</section>
-<section id="model-training-logistic-regression-vs-lasso" class="level3">
-<h3 class="anchored" data-anchor-id="model-training-logistic-regression-vs-lasso">2. Model Training (Logistic Regression vs Lasso)</h3>
-<p>We evaluated multiple models. Logistic Regression was ultimately chosen for its interpretability and ease of extraction (weights and intercept) for the frontend application.</p>
-<p>👉 <strong><a href="./notebooks/modeling.html">View the Modeling Notebook</a></strong></p>
-<div style="display: flex; gap: 10px;">
-<p><img src="frontend/public/plots/confusion_logit.jpg" width="48%" alt="Logit Confusion Matrix"> <img src="frontend/public/plots/confusion_lasso.jpg" width="48%" alt="Lasso Confusion Matrix"></p>
 </div>
-</section>
-<section id="model-interpretability-shap-values" class="level3">
-<h3 class="anchored" data-anchor-id="model-interpretability-shap-values">3. Model Interpretability (SHAP Values)</h3>
-<p>To ensure the model makes decisions based on logical medical grounds, we used SHAP (SHapley Additive exPlanations) to explain individual predictions and global feature importance.</p>
-<p><strong>Global Feature Importance:</strong> <img src="frontend/public/plots/shap_feature_importance.jpg" class="img-fluid" alt="SHAP Feature Importance"></p>
-<p><strong>SHAP Summary Plot:</strong> <img src="frontend/public/plots/shap_summary.jpg" class="img-fluid" alt="SHAP Summary"></p>
-<p><strong>Single Prediction Explanation:</strong> <img src="frontend/public/plots/single_explanation.jpg" class="img-fluid" alt="Single Explanation"></p>
-<hr>
-</section>
-</section>
-<section id="the-frontend-application" class="level2">
-<h2 class="anchored" data-anchor-id="the-frontend-application">💻 The Frontend Application</h2>
-<p>The frontend is a React application built with Vite and TypeScript. It does not rely on a Python backend API. Instead, it computes the logistic regression probability entirely in the browser using the extracted <code>ols_weights.json</code> and <code>ols_weights_features.json</code>.</p>
-<section id="key-features" class="level3">
-<h3 class="anchored" data-anchor-id="key-features">Key Features</h3>
-<ul>
-<li><strong>Real-time Inference:</strong> The risk score updates instantly as sliders and checkboxes are manipulated.</li>
-<li><strong>Dynamic Color Scaling:</strong> The risk indicator transitions smoothly from green (low risk) to yellow to red (high risk).</li>
-<li><strong>Data Context Integration:</strong> The custom slider component overlays the actual histogram distribution of the dataset (via <code>feature_distributions.json</code>), allowing the user to see where their selected value falls relative to the population.</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="repository-structure" class="level2">
-<h2 class="anchored" data-anchor-id="repository-structure">📁 Repository Structure</h2>
-<pre class="text"><code>├── notebooks/                   # Data Science Research
-│   ├── data/                    # Raw datasets
-│   ├── behavioral.ipynb         # EDA and Behavioral Analysis
-│   ├── features_selection.ipynb # Feature Engineering
-│   └── modeling.ipynb           # Model Training and Evaluation
-├── public/                      # Static Assets
-│   ├── plots/                   # Exported charts from notebooks
-│   ├── feature_distributions.json # Data histograms for the UI
-│   ├── ols_weights.json         # Extracted model weights
-│   └── ols_weights_features.json# Feature names mapping
-├── src/                         # React Frontend Code
-│   ├── App.tsx                  # Main application logic
-│   └── Slider.tsx               # Custom slider with integrated histogram
-└── ...</code></pre>
+<div id="b82985abbf44ad43" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-06T13:02:31.388148524Z&quot;,&quot;start_time&quot;:&quot;2026-03-06T13:02:31.345230850Z&quot;}}" data-execution_count="5">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> statsmodels_utils <span class="im">import</span> drop_highly_correlated_pairs</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>target_label <span class="op">=</span> <span class="st">'lung_cancer_risk'</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>X_clean <span class="op">=</span> drop_highly_correlated_pairs(df_lung.drop([target_label], axis<span class="op">=</span><span class="dv">1</span>), df_lung[target_label])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Hunting for pairs with correlation &gt; 0.8...
+Tie-breaker: Kept 'smoking_years', Dropped 'smoker'
+Tie-breaker: Kept 'pack_years', Dropped 'smoking_years'
+Tie-breaker: Kept 'pack_years', Dropped 'cigarettes_per_day'
+Tie-breaker: Kept 'pack_years', Dropped 'oxygen_saturation'
+Tie-breaker: Kept 'pack_years', Dropped 'fev1_x10'
+Tie-breaker: Kept 'pack_years', Dropped 'crp_level'
+----------------------------------------
+Dropped 6 variables due to pairwise correlation.</code></pre>
+</div>
+</div>
+<div id="3d83c178328fe889" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-06T13:02:54.045032288Z&quot;,&quot;start_time&quot;:&quot;2026-03-06T13:02:53.921997089Z&quot;}}" data-execution_count="7">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> statsmodels_utils <span class="im">import</span> calculate_and_drop_vif</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>X_clean_vif_dropped <span class="op">=</span> calculate_and_drop_vif(X_clean, verbose<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">''</span>,<span class="op">*</span>X_clean.columns)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Starting VIF Multicollinearity Check...
+
+----------------------------------------
+
+[DROPPED] 'pack_years'
+  * VIF Score: 5.05 (Overlap: 80.2%)
+  * Primary Suspects (Highest pairwise correlations with this feature):
+      - xray_abnormal (0.75)
+      - shortness_of_breath (0.74)
+      - chronic_cough (0.69)
+  * Current Runner-Ups (Watch these scores drop in the next loop!):
+      - xray_abnormal: 2.30
+      - shortness_of_breath: 2.26
+      - chronic_cough: 1.91
+------------------------------
+----------------------------------------
+VIF Check Complete!
+Features dropped: 1
+ age gender education_years income_level pack_years passive_smoking air_pollution_index occupational_exposure radon_exposure family_history_cancer copd asthma previous_tb chronic_cough chest_pain shortness_of_breath fatigue bmi xray_abnormal exercise_hours_per_week diet_quality alcohol_units_per_week healthcare_access</code></pre>
+</div>
+</div>
+<div id="3aa10767b9330ff6" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-06T13:03:09.854188163Z&quot;,&quot;start_time&quot;:&quot;2026-03-06T13:03:09.397892502Z&quot;}}" data-execution_count="8">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>X_clean2_dropped_vif , features_dropped<span class="op">=</span> calculate_and_drop_vif(df_lung.drop([target_label], axis<span class="op">=</span><span class="dv">1</span>), verbose<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>x_clean2_dropped_pair <span class="op">=</span> drop_highly_correlated_pairs(X_clean2_dropped_vif, df_lung[target_label])</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">''</span>,<span class="op">*</span>X_clean2_dropped_vif.columns)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Starting VIF Multicollinearity Check...
+
+----------------------------------------
+
+[DROPPED] 'pack_years'
+  * VIF Score: 35.16 (Overlap: 97.2%)
+  * Primary Suspects (Highest pairwise correlations with this feature):
+      - fev1_x10 (0.94)
+      - crp_level (0.92)
+      - oxygen_saturation (0.90)
+  * Current Runner-Ups (Watch these scores drop in the next loop!):
+      - cigarettes_per_day: 14.15
+      - smoking_years: 13.62
+      - smoker: 12.75
+------------------------------
+
+[DROPPED] 'smoker'
+  * VIF Score: 10.29 (Overlap: 90.3%)
+  * Primary Suspects (Highest pairwise correlations with this feature):
+      - smoking_years (0.83)
+      - cigarettes_per_day (0.81)
+      - fev1_x10 (0.63)
+  * Current Runner-Ups (Watch these scores drop in the next loop!):
+      - cigarettes_per_day: 10.17
+      - smoking_years: 9.95
+      - fev1_x10: 7.08
+------------------------------
+
+[DROPPED] 'fev1_x10'
+  * VIF Score: 6.35 (Overlap: 84.2%)
+  * Primary Suspects (Highest pairwise correlations with this feature):
+      - crp_level (0.87)
+      - oxygen_saturation (0.85)
+      - cigarettes_per_day (0.79)
+  * Current Runner-Ups (Watch these scores drop in the next loop!):
+      - crp_level: 5.45
+      - oxygen_saturation: 4.74
+      - cigarettes_per_day: 3.21
+------------------------------
+----------------------------------------
+VIF Check Complete!
+Features dropped: 3
+Hunting for pairs with correlation &gt; 0.8...
+Tie-breaker: Kept 'crp_level', Dropped 'oxygen_saturation'
+----------------------------------------
+Dropped 1 variables due to pairwise correlation.
+ age gender education_years income_level smoking_years cigarettes_per_day passive_smoking air_pollution_index occupational_exposure radon_exposure family_history_cancer copd asthma previous_tb chronic_cough chest_pain shortness_of_breath fatigue bmi oxygen_saturation crp_level xray_abnormal exercise_hours_per_week diet_quality alcohol_units_per_week healthcare_access</code></pre>
+</div>
+</div>
+<div id="c5ef8786f57f8810" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-06T13:03:13.073362606Z&quot;,&quot;start_time&quot;:&quot;2026-03-06T13:03:13.038772908Z&quot;}}" data-execution_count="9">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">set</span>(X_clean2_dropped_vif.columns).difference(X_clean.columns))</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">set</span>(X_clean.columns).difference(X_clean2_dropped_vif.columns))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'crp_level', 'smoking_years', 'cigarettes_per_day', 'oxygen_saturation'}
+{'pack_years'}</code></pre>
+</div>
+</div>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
