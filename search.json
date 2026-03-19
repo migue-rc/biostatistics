@@ -2,35 +2,35 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome to the Documentation",
+    "title": "Lung Cancer Risk Predictor",
     "section": "",
     "text": "An interactive, end-to-end data science project demonstrating the lifecycle of a machine learning model from exploratory data analysis (EDA) to a fully deployed frontend application.\n\n\n\nLive Demo Preview\n\n\n🔗 Live Demo: Lung Cancer Risk Predictor\nThis project predicts the estimated probability of lung cancer based on various health, behavioral, and environmental features using a Logistic Regression model.\n\n⚠️ Medical Disclaimer: This application and its underlying model are for educational and demonstrative purposes only. It is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.\n\n\n\n\nThe objective of this repository is to serve as a comprehensive portfolio piece bridging the gap between Data Science and Web Development. It demonstrates: 1. Data Science & Machine Learning: Rigorous feature selection, model training, and interpretability using Python (Pandas, Scikit-Learn, SHAP). 2. Frontend Engineering: Translating static model weights into a live, interactive React application using TypeScript and Vite.\n\n\n\n\nAll research, data preprocessing, and modeling were conducted in Jupyter Notebooks (/notebooks).\n\n\nWe began by analyzing the dataset to understand the relationships between different variables and the target (lung_cancer_risk).\n👉 View the EDA Notebook 👉 View the Feature Selection Notebook\n\n\n\nFeature Impact\n\n\n\n\n\nWe evaluated multiple models. Logistic Regression was ultimately chosen for its interpretability and ease of extraction (weights and intercept) for the frontend application.\n👉 View the Modeling Notebook\n\n \n\n\n\n\nTo ensure the model makes decisions based on logical medical grounds, we used SHAP (SHapley Additive exPlanations) to explain individual predictions and global feature importance.\nGlobal Feature Importance: \nSHAP Summary Plot: \nSingle Prediction Explanation: \n\n\n\n\n\nThe frontend is a React application built with Vite and TypeScript. It does not rely on a Python backend API. Instead, it computes the logistic regression probability entirely in the browser using the extracted ols_weights.json and ols_weights_features.json.\n\n\n\nReal-time Inference: The risk score updates instantly as sliders and checkboxes are manipulated.\nDynamic Color Scaling: The risk indicator transitions smoothly from green (low risk) to yellow to red (high risk).\nData Context Integration: The custom slider component overlays the actual histogram distribution of the dataset (via feature_distributions.json), allowing the user to see where their selected value falls relative to the population.\n\n\n\n\n\n\n├── notebooks/                   # Data Science Research\n│   ├── data/                    # Raw datasets\n│   ├── behavioral.ipynb         # EDA and Behavioral Analysis\n│   ├── features_selection.ipynb # Feature Engineering\n│   └── modeling.ipynb           # Model Training and Evaluation\n├── public/                      # Static Assets\n│   ├── plots/                   # Exported charts from notebooks\n│   ├── feature_distributions.json # Data histograms for the UI\n│   ├── ols_weights.json         # Extracted model weights\n│   └── ols_weights_features.json# Feature names mapping\n├── src/                         # React Frontend Code\n│   ├── App.tsx                  # Main application logic\n│   └── Slider.tsx               # Custom slider with integrated histogram\n└── ..."
   },
   {
     "objectID": "index.html#project-goals",
     "href": "index.html#project-goals",
-    "title": "Welcome to the Documentation",
+    "title": "Lung Cancer Risk Predictor",
     "section": "",
     "text": "The objective of this repository is to serve as a comprehensive portfolio piece bridging the gap between Data Science and Web Development. It demonstrates: 1. Data Science & Machine Learning: Rigorous feature selection, model training, and interpretability using Python (Pandas, Scikit-Learn, SHAP). 2. Frontend Engineering: Translating static model weights into a live, interactive React application using TypeScript and Vite."
   },
   {
     "objectID": "index.html#the-data-science-process",
     "href": "index.html#the-data-science-process",
-    "title": "Welcome to the Documentation",
+    "title": "Lung Cancer Risk Predictor",
     "section": "",
     "text": "All research, data preprocessing, and modeling were conducted in Jupyter Notebooks (/notebooks).\n\n\nWe began by analyzing the dataset to understand the relationships between different variables and the target (lung_cancer_risk).\n👉 View the EDA Notebook 👉 View the Feature Selection Notebook\n\n\n\nFeature Impact\n\n\n\n\n\nWe evaluated multiple models. Logistic Regression was ultimately chosen for its interpretability and ease of extraction (weights and intercept) for the frontend application.\n👉 View the Modeling Notebook\n\n \n\n\n\n\nTo ensure the model makes decisions based on logical medical grounds, we used SHAP (SHapley Additive exPlanations) to explain individual predictions and global feature importance.\nGlobal Feature Importance: \nSHAP Summary Plot: \nSingle Prediction Explanation:"
   },
   {
     "objectID": "index.html#the-frontend-application",
     "href": "index.html#the-frontend-application",
-    "title": "Welcome to the Documentation",
+    "title": "Lung Cancer Risk Predictor",
     "section": "",
     "text": "The frontend is a React application built with Vite and TypeScript. It does not rely on a Python backend API. Instead, it computes the logistic regression probability entirely in the browser using the extracted ols_weights.json and ols_weights_features.json.\n\n\n\nReal-time Inference: The risk score updates instantly as sliders and checkboxes are manipulated.\nDynamic Color Scaling: The risk indicator transitions smoothly from green (low risk) to yellow to red (high risk).\nData Context Integration: The custom slider component overlays the actual histogram distribution of the dataset (via feature_distributions.json), allowing the user to see where their selected value falls relative to the population."
   },
   {
     "objectID": "index.html#repository-structure",
     "href": "index.html#repository-structure",
-    "title": "Welcome to the Documentation",
+    "title": "Lung Cancer Risk Predictor",
     "section": "",
     "text": "├── notebooks/                   # Data Science Research\n│   ├── data/                    # Raw datasets\n│   ├── behavioral.ipynb         # EDA and Behavioral Analysis\n│   ├── features_selection.ipynb # Feature Engineering\n│   └── modeling.ipynb           # Model Training and Evaluation\n├── public/                      # Static Assets\n│   ├── plots/                   # Exported charts from notebooks\n│   ├── feature_distributions.json # Data histograms for the UI\n│   ├── ols_weights.json         # Extracted model weights\n│   └── ols_weights_features.json# Feature names mapping\n├── src/                         # React Frontend Code\n│   ├── App.tsx                  # Main application logic\n│   └── Slider.tsx               # Custom slider with integrated histogram\n└── ..."
   },
